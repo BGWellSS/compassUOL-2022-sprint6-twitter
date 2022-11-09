@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// Tweet SCSS
+
+.tweet-card {
+  display: flex;
+  padding: 10px 15px;
+  box-sizing: border-box;
+
+  .tweet-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .tweet-header {
+    display: flex;
+    align-items: center;
+
+    .user-name {
+      margin: 0;
+      color: $light-tweet-color-text;
+    }
+
+    .user-tag {
+      margin: 0 4px;
+    }
+
+    .dot-separator {
+      display: flex;
+      align-items: center;
+    }
+
+    .tweet-post-time {
+      margin-left: 4px;
+    }
+  }
+
+  .user-tag,
+  .dot-separator,
+  .tweet-post-time,
+  .interaction-value {
+    color: $light-tweet-color-text-secondary;
+  }
+
+  .tweet-content {
+    margin-top: 4px;
+
+    .tweet-image {
+      margin: 10px 0;
+      width: 100%;
+      border-radius: 16px;
+    }
+  }
+
+  .tweet-footer {
+    margin-top: 10px;
+    width: 100%;
+
+    .tweet-interactions {
+      display: flex;
+      width: 100%;
+      margin: 4px 0;
+    }
+
+    .interaction-item {
+      display: flex;
+      align-items: center;
+      width: 25%;
+    }
+
+    .interaction-value {
+      margin-left: 10px;
+      color: $light-tweet-color-text-secondary;
+    }
+
+    .show-thread {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: $tweet-link-color-text;
+    }
+  }
+
+  &.tweet-dark {
+
+    .user-name,
+    .tweet-text-camp {
+      color: $dark-tweet-color-text;
+    }
+
+    .user-tag,
+    .dot-separator,
+    .tweet-post-time,
+    .interaction-value {
+      color: $dark-tweet-color-text-secondary;
+    }
+  }
+}
