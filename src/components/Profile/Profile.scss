@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// Profile SCSS
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+
+  .profile-content {
+    margin-left: 10px;
+
+    p {
+      margin: 0;
+    }
+
+    .user-name {
+      color: $light-profile-dft-color-text;
+    }
+
+    .user-tagname {
+      color: $light-profile-tag-color-text;
+    }
+  }
+
+  .profile-button {
+    margin-left: auto;
+    padding: 8px;
+  }
+
+  &.profile-dark {
+    .user-name {
+      color: $dark-profile-dft-color-text;
+    }
+
+    .user-tagname {
+      color: $dark-profile-tag-color-text;
+    }
+  }
+}
