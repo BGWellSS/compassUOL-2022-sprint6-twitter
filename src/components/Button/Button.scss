@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// Button SCSS
+
+// ---- Button
+.app-button {
+  width: 100%;
+  border: none;
+  border-radius: 9999px;
+
+  // - Primary
+  &.btn-primary {
+    background-color: $light-button-color-bg-primary;
+    color: $light-button-color-text-primary;
+  }
+  
+  // - Secondery
+  &.btn-secondary {
+    padding: 10px;
+    background-color: $light-button-color-bg-secondary;
+    color: $light-button-color-text-secondary;
+    border: 1px solid $light-button-color-border-secondary;
+  }
+  
+  // - Tertiary
+  &.btn-tertiary {
+    background-color: $light-button-color-bg-tertiary;
+    color: $light-button-color-text-tertiary;
+  }
+  
+  // - Quaternary
+  &.btn-quaternary {
+    background-color: $light-button-color-bg-quaternary;
+    color: $light-button-color-text-quaternary;
+    border: 1px solid $light-button-color-border-quaternary;
+  }
+  
+  // - Sizes
+  &.btn-big {
+    padding: 16px;
+  }
+  
+  &.btn-medium {
+    padding: 10px 17px;
+  }
+  
+  &.btn-small {
+    padding: 6px 17px;
+  }
+  
+  // - Fade
+  &.btn-fade {
+    opacity: 0.5;
+  }
+}
+
