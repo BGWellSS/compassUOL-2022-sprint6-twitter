@@ -2,8 +2,8 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="https://github.com/BGWellSS/compass-front-sprint5-twitter">
-    <img src="./public/readme/Logo-Compasso-Branco.svg" alt="Logo Compass">
+  <a href="https://github.com/BGWellSS/compass-front-sprint6-twitter">
+    <img src="/public/readme/Logo-Compasso-Branco.svg" alt="Logo Compass">
   </a>
 
   <h3 align="center">Project Twitter</h3>
