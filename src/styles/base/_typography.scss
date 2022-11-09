@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+// ---- Base typo
+body {
+  font-family: $font-family-primary;
+  font-size: $core-font-size;
+  font-weight: 500;
+}
+
+// ---- Button
+// - butonSecondary
+.app-button {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  font-weight: 800;
+}
+
+// ---- Menu
+// - menuItem
+.menu-item {
+  .label {
+    font-size: 1.9rem;
+    line-height: 2.26rem;
+    font-weight: 900;
+  }
+}
+
+// ---- Profile
+// - content
+.profile {
+  .profile-content {
+    .user-name {
+      font-weight: 900;
+      line-height: 1.9rem;
+    }
+
+    .user-tagname {
+      font-weight: 500;
+      line-height: 1.9rem;
+    }
+  }
+}
+
+// ---- Header
+.page-header {
+  .header-title {
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+    font-weight: 900;
+  }
+}
+
+// ---- Post
+.tweet-post {
+  .text-imput {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+
+    &::placeholder {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      font-weight: 600;
+    }
+  }
+}
+
+// ---- Tweet card
+.tweet-card {
+
+  .user-name {
+    font-size: 1.5rem;
+    line-height: 1.79rem;
+    font-weight: 900;
+  }
+
+  .user-tag,
+  .dot-separator,
+  .tweet-post-time,
+  .tweet-text-camp {
+    font-size: 1.5rem;
+    line-height: 1.79rem;
+    font-weight: 700;
+  }
+
+  .interaction-value,
+  .show-thread {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+  }
+}
+
+// ---- Search
+.app-search {
+  .imput-search {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: 700;
+  }
+}
+
+// ---- News card
+.news-card {
+  font-size: 1.7rem;
+  line-height: 1.9rem;
+  font-weight: 900;
+
+  .news-card-header,
+  .tag-label {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+  }
+}
+
+// ---- News section
+.news-section {
+  .section-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 900;
+  }
+
+  .news-showmore {
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+    font-weight: 700;
+  }
+}
+
+// ---- Follow section
+.follow-section {
+  .section-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 900;
+  }
+
+  .follow-showmore {
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+    font-weight: 700;
+  }
+}
+
+// ---- Footer
+.page-footer {
+  .footer-title {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    font-weight: 800;
+  }
+}

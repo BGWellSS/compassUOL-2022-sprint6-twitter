@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// Home page SCSS
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+
+  .page-content {
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .a-side,
+  .b-side {
+    width: 25%;
+    height: 90vh;
+    position: fixed;
+  }
+  .a-side {
+    left: 0;
+  }
+  .b-side {
+    right: 0;
+  }
+
+  .main-content {
+    width: 50%;
+  }
+
+
+  .page-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+}

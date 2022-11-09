@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+// ---- Fonts
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+// - Family
+$font-family-primary: "Nunito", sans-serif;
+// - Sizes
+$core-font-size: 1.6rem;
+
+// ---- Colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-primary-blue: #1DA1F2;
+$color-primary-blue-fade: #6CBEF5;
+$color-dark-1: #17202A;
+$color-dark-2: #1C2733;
+$color-dark-3: #283340;
+$color-dark-4: #3A444C;
+$color-dark-5: #5B7083;
+$color-dark-6: #8899A6;
+$color-dark-7: #EBEEF0;
+$color-dark-8: #F7F9FA;
+
+// ---- Component
+// - Button
+$light-button-color-bg-primary: $color-primary-blue;
+$light-button-color-text-primary: $color-white;
+$light-button-color-border-primary: $color-primary-blue-fade;
+$light-button-color-bg-secondary: transparent;
+$light-button-color-text-secondary: $color-primary-blue;
+$light-button-color-border-secondary: $color-primary-blue;
+$light-button-color-bg-tertiary: $color-dark-7;
+$light-button-color-text-tertiary: $color-black;
+$light-button-color-bg-quaternary: transparent;
+$light-button-color-text-quaternary: $color-white;
+$light-button-color-border-quaternary: $color-primary-blue-fade;
+
+// ---- Menu
+// - menu item
+$light-menu-color-text-primary: $color-black;
+$dark-menu-color-text-primary: $color-white;
+$menu-color-text-selected: $color-primary-blue;
+
+// ---- Profile
+$light-profile-dft-color-text: $color-black;
+$light-profile-tag-color-text: $color-dark-5;
+$dark-profile-dft-color-text: $color-white;
+$dark-profile-tag-color-text: $color-dark-6;
+
+// ---- Header
+$light-header-color-text: $color-black;
+$dark-header-color-text: $color-white;
+$light-header-color-border: $color-dark-7;
+
+// ---- Post Aria
+$light-post-color-text: $color-black;
+$dark-post-color-text: $color-white;
+$light-post-placeholder-color-text: $color-dark-5;
+$dark-post-placeholder-color-text: $color-dark-6;
+
+// ---- Tweet Card
+$light-tweet-color-text: $color-black;
+$dark-tweet-color-text: $color-white;
+$light-tweet-color-text-secondary: $color-dark-5;
+$dark-tweet-color-text-secondary: $color-dark-6;
+$tweet-link-color-text: $color-primary-blue;
+
+// ---- Tweet Feed 
+$light-tweetfeed-color-border: $color-dark-7;
+$dark-tweetfeed-color-border: $color-dark-4;
+
+// ---- Search
+$light-search-color-text: $color-black;
+$dark-search-color-text: $color-white;
+$light-search-color-bg: $color-dark-7;
+$dark-search-color-bg: $color-dark-3;
+$light-search-placeholder-color-text: $color-dark-5;
+$dark-search-placeholder-color-text: $color-dark-6;
+
+// ---- Spacer
+$light-spacer-color-bg: $color-dark-8;
+$dark-spacer-color-bg: $color-dark-4;
+
+// ---- News Card
+$light-newscard-color-text: $color-black;
+$dark-newscard-color-text: $color-white;
+$light-newscard-color-text-secondary: $color-dark-5;
+$dark-newscard-color-text-secondary: $color-dark-6;
+$light-newscard-color-border: $color-dark-7;
+$dark-newscard-color-border: $color-dark-4;
+$newscard-link-color-text: $color-primary-blue;
+
+// ---- News Section
+$light-news-color-text: $color-black;
+$dark-news-color-text: $color-white;
+$light-news-color-border: $color-dark-7;
+$dark-news-color-border: $color-dark-4;
+$light-news-color-bg: $color-dark-8;
+$dark-news-color-bg: $color-dark-2;
+$news-link-color-text: $color-primary-blue;
+
+// ---- Follow Section
+$light-follow-color-text: $color-black;
+$dark-follow-color-text: $color-white;
+$light-follow-color-border: $color-dark-7;
+$dark-follow-color-border: $color-dark-4;
+$light-follow-color-bg: $color-dark-8;
+$dark-follow-color-bg: $color-dark-2;
+$follow-link-color-text: $color-primary-blue;
+
+// ---- Footer
+$follow-color-text: $color-white;
+$footer-color-bg: $color-primary-blue;
