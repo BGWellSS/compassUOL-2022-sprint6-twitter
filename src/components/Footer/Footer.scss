@@ -10,10 +10,6 @@
   color: $follow-color-text;
   box-sizing: border-box;
 
-  .footer-content {
-    margin-right: 25%;
-  }
-
   .footer-title,
   .footer-desc {
     margin: 0;
@@ -21,7 +17,9 @@
 
   .footer-buttons {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    width: 50%;
   }
 
   .button-item {
