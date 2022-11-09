@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/BGWellSS/compass-front-sprint6-twitter">
-    <img src="https://github.com/BGWellSS/compass-front-sprint5-twitter/tree/main/app/dist/images/readme/Logo-Compasso-Branco.svg" alt="Logo Compass">
+    ![Logo-Compasso-Branco](https://user-images.githubusercontent.com/111922665/200765780-e1b9e7bd-e10b-44b6-893b-765a466b6584.svg)
   </a>
 
   <h3 align="center">Project Twitter</h3>
