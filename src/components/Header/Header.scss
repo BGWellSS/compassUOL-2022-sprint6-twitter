@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// Header SCSS
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $light-header-color-border;
+
+  .header-title {
+    margin: 0;
+    margin-right: 15px;
+    color: $light-header-color-text;
+  }
+
+  .image-container {
+    margin-left: auto;
+  }
+
+  &.header-dark {
+    .header-title {
+      color: $dark-header-color-text;
+    }
+  }
+}
