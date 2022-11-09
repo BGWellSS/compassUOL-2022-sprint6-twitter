@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// Menu Item
+
+.menu-item {
+  padding: 18px 10px;
+  list-style: none;
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .label {
+    margin-left: 20px;
+    color: $light-menu-color-text-primary;
+  }
+
+  &.menu-dark {
+    .label {
+      color: $dark-menu-color-text-primary;
+    }
+  }
+
+  &.menu-selected {
+    .label {
+      color: $menu-color-text-selected;
+    }
+  }
+}
