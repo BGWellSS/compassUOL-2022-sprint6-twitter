@@ -16,13 +16,13 @@ export default function Menu ({
   const menuItems: MenuItemProps[] = [
     {
       iconName: "logo",
-      linkURL: "/404.html",
+      linkURL: "/",
       selected: true,
     },
     {
       iconName: "home",
       label: "Home",
-      linkURL: "/404.html",
+      linkURL: "/",
       dark: dark ? dark : false,
       selected: true,
     },

@@ -6,6 +6,7 @@ import Menu from "../../components/Menu/Menu";
 import News from "../../components/News/News";
 import Post from "../../components/Post/Post";
 import Search from "../../components/Search/Search";
+import Spacer from "../../components/Spacer/Spacer";
 import TweetFeed from "../../components/TweetFeed/TweetFeed";
 import "./Home.scss";
 
@@ -14,17 +15,18 @@ export default function HomePage() {
     <main className="home-page">
       <section className="page-content">
         <aside className="a-side">
-          <Menu/>
+          <Menu />
         </aside>
         <section className="main-content">
           <Header label="Home"/>
-          <Post/>
+          <Post />
+          <Spacer />
           <TweetFeed/>
         </section>
         <aside className="b-side">
-          <Search/>
-          <News/>
-          <Follow/>
+          <Search />
+          <News />
+          <Follow />
         </aside>
       </section>
       <Footer

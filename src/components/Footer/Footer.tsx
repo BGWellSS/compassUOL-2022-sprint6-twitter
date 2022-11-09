@@ -27,12 +27,16 @@ export default function Footer ({
         </p>
       </div>
       <div className={`footer-buttons`}>
-        <div className={`button-item`}>
+        <a
+          href="/404.html"
+          className={`button-item`}>
           <Button label="Log in" btnType="quaternary"></Button>
-        </div>
-        <div className={`button-item`}>
+        </a>
+        <a
+          href="/404.html"
+          className={`button-item`}>
           <Button label="Sign up" btnType="tertiary"></Button>
-        </div>
+        </a>
       </div>
     </footer>
   );

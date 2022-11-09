@@ -6,19 +6,17 @@
   width: 100%;
   padding: 0;
   box-sizing: border-box;
-  border-top: 1px solid $light-tweetfeed-color-border;
-  border-left: 1px solid $light-tweetfeed-color-border;
-  border-right: 1px solid $light-tweetfeed-color-border;
+  border-top: 1px solid $light-color-border;
 
   .tweet-card {
-    border-bottom: 1px solid $light-tweetfeed-color-border;
+    border-bottom: 1px solid $light-color-border;
   }
 
   &.tweet-feed-dark {
-    border-color: $dark-tweetfeed-color-border;
+    border-color: $dark-color-border;
 
     .tweet-card {
-      border-bottom: 1px solid $dark-tweetfeed-color-border;
+      border-bottom: 1px solid $dark-color-border;
     }
   }
 }

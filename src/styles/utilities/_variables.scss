@@ -21,6 +21,10 @@ $color-dark-6: #8899A6;
 $color-dark-7: #EBEEF0;
 $color-dark-8: #F7F9FA;
 
+// ---- Borders
+$light-color-border: $color-dark-7;
+$dark-color-border: $color-dark-4;
+
 // ---- Component
 // - Button
 $light-button-color-bg-primary: $color-primary-blue;
@@ -64,10 +68,6 @@ $dark-tweet-color-text: $color-white;
 $light-tweet-color-text-secondary: $color-dark-5;
 $dark-tweet-color-text-secondary: $color-dark-6;
 $tweet-link-color-text: $color-primary-blue;
-
-// ---- Tweet Feed 
-$light-tweetfeed-color-border: $color-dark-7;
-$dark-tweetfeed-color-border: $color-dark-4;
 
 // ---- Search
 $light-search-color-text: $color-black;
