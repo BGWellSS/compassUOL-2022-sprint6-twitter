@@ -40,7 +40,10 @@ export default function Tweet ({
   }
 
   return (
-    <article className={`tweet-card${dark ? " tweet-dark" : ""}`}>
+    <article
+      className={`tweet-card${dark ? " tweet-dark" : ""}`}
+      {...props}
+      >
       <div className="avatar-container">
         <Avatar size="medium" userID={userID} linkURL={userURL}></Avatar>
       </div>
