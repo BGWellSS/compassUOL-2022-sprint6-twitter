@@ -22,22 +22,24 @@ export default function Post ({
   const [fileUploaded, setFileUpload] = useState<File | null>(null);
 
   function createTweet() {
-    if(setTweets) {
-      setTweets(oldTweets => [
-        {
-          userName: "User Name",
-          userTagName: "@tagname",
-          userID: "default",
-          userURL: "/404.html",
-          postText: tweetInputText,
-          imageURL: "/images/post-image-"+fileUploaded?.name,
-          dark: dark
-        },
-        ...oldTweets,
-      ]);
+    if(tweetInputText !== "") {
+      if(setTweets) {
+        setTweets(oldTweets => [
+          {
+            userName: "User Name",
+            userTagName: "@tagname",
+            userID: "default",
+            userURL: "/404.html",
+            postText: tweetInputText,
+            imageURL: "/images/post-image-"+fileUploaded?.name,
+            dark: dark
+          },
+          ...oldTweets,
+        ]);
+      }
+      setInputText("");
+      setFileUpload(null);
     }
-    setInputText("");
-    setFileUpload(null);
   }
 
   function clickToUploadFile() {

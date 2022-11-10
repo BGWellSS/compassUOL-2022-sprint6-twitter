@@ -11,44 +11,46 @@ import { TweetProps } from "../../components/Tweet/Tweet";
 import TweetFeed from "../../components/TweetFeed/TweetFeed";
 import "./Home.scss";
 
-export default function HomePage({dark = false}) {
+export default function HomePage() {
+  const [darkMode, setDarkMode] = useState<boolean>(false);
   const [tweetList, setTweets] = useState<TweetProps[]>(
     [
       {
-        userName: "User Name",
-        userTagName: "@tagname",
+        userName: "Bessie Cooper",
+        userTagName: "@alessandroveronezi",
         userID: "1",
         userURL: "/404.html",
         postText: "Tom is in a big hurry.",
         imageURL: "/images/post-image-default.png",
-        dark: dark,},
+        dark: darkMode,},
       {
-        userName: "User Name",
-        userTagName: "@tagname",
+        userName: "Jenny Wilson",
+        userTagName: "@gabrielcantarin",
         userID: "2",
         userURL: "/404.html",
         postText: "Tom is in a big hurry.",
         imageURL: "/images/post-image-01.png",
-        dark: dark,
+        dark: darkMode,
       }
     ]
   );
+
   return (
     <main className="home-page">
       <section className="page-content">
         <aside className="a-side">
-          <Menu />
+          <Menu dark={darkMode}/>
         </aside>
         <section className="main-content">
-          <Header label="Home"/>
-          <Post setTweets={setTweets}/>
-          <Spacer />
-          <TweetFeed tweets={tweetList}/>
+          <Header label="Home" dark={darkMode}/>
+          <Post setTweets={setTweets} dark={darkMode}/>
+          <Spacer dark={darkMode}/>
+          <TweetFeed tweets={tweetList} dark={darkMode}/>
         </section>
         <aside className="b-side">
-          <Search />
-          <News />
-          <Follow />
+          <Search dark={darkMode}/>
+          <News dark={darkMode}/>
+          <Follow dark={darkMode}/>
         </aside>
       </section>
       <Footer
