@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// Menu SCSS
+
+.aside-menu {
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+  height: 100%;
+
+  ul {
+    padding-left: 20px;
+  }
+
+  .app-button {
+    margin: 10px 0;
+  }
+
+  .profile {
+    margin-top: auto;
+    align-self: flex-end;
+  }
+}

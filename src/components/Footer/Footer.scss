@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// Footer SCSS
+
+.page-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  background: $footer-color-bg;
+  color: $follow-color-text;
+  box-sizing: border-box;
+
+  .footer-title,
+  .footer-desc {
+    margin: 0;
+  }
+
+  .footer-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+  }
+
+  .button-item {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}

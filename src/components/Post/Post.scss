@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// Post SCSS
+
+.tweet-post {
+  display: flex;
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border-top: 1px solid $light-color-border;
+
+  .post-imput-container {
+    width: 100%;
+    margin-left: 12px;
+  }
+
+  .text-imput {
+    width: 100%;
+    padding: 12px 0;
+    margin-bottom: 24px;
+    color: $light-post-color-text;
+    background: transparent;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+    transition: all ease-in-out 300ms;
+
+    &::placeholder {
+      color: $light-post-placeholder-color-text;
+    }
+
+    &:focus {
+      margin-bottom: 50px;
+      transition: all ease-in-out 300ms;
+    }
+  }
+
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #imageUploader {
+    display: none;
+  }
+  .post-menu-icons {
+    input {
+      margin-right: 15px;
+    }
+  }
+
+  &.post-dark {
+    border-color: $dark-color-border;
+
+    .text-imput {
+      color: $dark-post-color-text;
+
+      &::placeholder {
+        color: $dark-post-placeholder-color-text;
+      }
+    }
+  }
+}

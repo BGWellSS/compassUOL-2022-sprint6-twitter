@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// Follow SCSS
+
+.follow-section {
+  background: $light-follow-color-bg;
+  border-radius: 16px;
+  padding: 0;
+
+  .follow-section-header {
+    padding: 12px 15px;
+    border-bottom: 1px solid $light-follow-color-border;
+  }
+
+  .section-title {
+    margin: 0;
+    color: $light-follow-color-text;
+  }
+
+  .profile {
+    border-bottom: 1px solid $light-follow-color-border;
+  }
+
+  .follow-section-footer {
+    padding: 15px;
+  }
+
+  .follow-showmore {
+    color: $follow-link-color-text;
+    text-decoration: none;
+  }
+
+  &.follow-section-dark {
+    background: $dark-follow-color-bg;
+
+    .follow-section-header {
+      border-color: $dark-follow-color-border;
+    }
+
+    .section-title {
+      margin: 0;
+      color: $dark-follow-color-text;
+    }
+
+    .profile {
+      border-bottom: 1px solid $dark-follow-color-border;
+    }
+  }
+}

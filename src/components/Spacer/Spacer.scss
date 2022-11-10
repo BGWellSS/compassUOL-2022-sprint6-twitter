@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// Spacer SCSS
+
+.spacer {
+  height: 10px;
+  width: 100%;
+  background-color: $light-spacer-color-bg;
+  box-sizing: border-box;
+  border-top: 1px solid $light-color-border;
+
+  &.spacer-dark {
+    background-color: $dark-spacer-color-bg;
+  }
+}

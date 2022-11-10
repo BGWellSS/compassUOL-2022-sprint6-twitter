@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// Search SCSS
+
+.app-search {
+  display: flex;
+  align-items: center;
+  background-color: $light-search-color-bg;
+  padding: 10px 16px;
+  border-radius: 99999px;
+  box-sizing: border-box;
+
+  .search-icon {
+    max-height: 19px;
+    max-width: 19px;
+  }
+
+  .imput-search {
+    margin-left: 15px;
+    width: 100%;
+    color: $light-search-color-text;
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    &::placeholder {
+      color: $light-search-placeholder-color-text;
+    }
+  }
+
+  &.search-dark {
+    background-color: $dark-search-color-bg;
+
+    .imput-search {
+      color: $dark-search-color-text;
+
+      &::placeholder {
+        color: $dark-search-placeholder-color-text;
+      }
+    }
+  }
+}

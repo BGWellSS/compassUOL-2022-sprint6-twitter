@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// News Card SCSS
+
+.news-card {
+  padding: 10px 15px;
+  color: $light-newscard-color-text;
+  border-bottom: 1px solid $light-newscard-color-border;
+  box-sizing: border-box;
+
+  .content-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card-content {
+    width: 100%;
+  }
+
+  .news-card-header {
+    display: flex;
+  }
+
+  .dot-separator {
+    margin: 0 4px;
+  }
+
+  .news-card-text {
+    margin: 6px 0;
+  }
+
+  .news-card-image-container {
+    margin-left: 15px;
+  }
+
+  .news-card-image {
+    max-height: 69px;
+    max-width: 71px;
+    border-radius: 12px;
+  }
+
+  .tags {
+    margin-left: 4px;
+    color: $newscard-link-color-text;
+    text-decoration: none;
+  }
+
+  .news-card-header,
+  .tag-label {
+    color: $light-newscard-color-text-secondary;
+  }
+
+  &.news-card-dark {
+    color: $dark-newscard-color-text;
+    border-color: $dark-newscard-color-border;
+
+    .news-card-header,
+    .tag-label {
+      color: $dark-newscard-color-text-secondary;
+    }
+
+    .news-card-text {
+      color: $dark-newscard-color-text;
+    }
+  }
+}

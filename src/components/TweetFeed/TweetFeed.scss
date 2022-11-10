@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import "../../styles/main";
+// TweetFeed SCSS
+
+.tweet-feed {
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  border-top: 1px solid $light-color-border;
+
+  .tweet-card {
+    border-bottom: 1px solid $light-color-border;
+  }
+
+  &.tweet-feed-dark {
+    border-color: $dark-color-border;
+
+    .tweet-card {
+      border-bottom: 1px solid $dark-color-border;
+    }
+  }
+}

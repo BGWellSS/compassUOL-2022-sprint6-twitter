@@ -3,14 +3,12 @@
 // Home page SCSS
 
 .home-page {
-  display: flex;
-  flex-direction: column;
-  width: 1920px;
   height: 100vh;
-  margin: 0 auto;
-
+  
   .page-content {
     display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
     box-sizing: border-box;
   }
 
@@ -18,20 +16,39 @@
   .b-side {
     width: 25%;
     height: 90vh;
-    position: fixed;
   }
   .a-side {
+    top: 0;
     left: 0;
   }
   .b-side {
+    top: 0;
     right: 0;
+    padding: 15px 0 0 15px;
+
+    & >*:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
 
+  // -- Aside
+  .aside-menu {
+    .app-button {
+      max-width: 80%;
+    }
+  }
+
+  // -- Main content
   .main-content {
     width: 50%;
+    border-left: 1px solid $light-color-border;
+    border-right: 1px solid $light-color-border;
+
   }
 
+  // -- Bside
 
+  // -- Footer
   .page-footer {
     position: fixed;
     width: 100%;
