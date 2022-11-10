@@ -25,7 +25,7 @@ export default function Tweet ({
 }: TweetProps) {
 
   function imageRender() {
-    if (imageURL !== "") {
+    if (imageURL !== "" && imageURL !== "/images/post-image-undefined") {
       return (
         <div className="tweet-image-container">
           <img

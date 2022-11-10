@@ -17,7 +17,9 @@ export default function Post ({
   setTweets,
   ...props
 }: PostProps) {
+  // -- States
   const [tweetInputText, setInputText] = useState("");
+  const [fileUploaded, setFileUpload] = useState<File | null>(null);
 
   function createTweet() {
     if(setTweets) {
@@ -28,12 +30,23 @@ export default function Post ({
           userID: "default",
           userURL: "/404.html",
           postText: tweetInputText,
+          imageURL: "/images/post-image-"+fileUploaded?.name,
           dark: dark
         },
         ...oldTweets,
       ]);
     }
     setInputText("");
+    setFileUpload(null);
+  }
+
+  function clickToUploadFile() {
+    const fileDOM = document.getElementById("imageUploader");
+    fileDOM?.click();
+  }
+  function changeFileState(event: React.ChangeEvent<HTMLInputElement>) {
+    if(event.target.files)
+      setFileUpload(event.target.files[0]);
   }
 
   return (
@@ -57,11 +70,12 @@ export default function Post ({
         />
         <div className="menu-container">
           <div className="post-menu-icons">
-            <input type="image" src="/images/icon-image-submit.png" alt="image imput icon" width="24" height="24"/>
-            <input type="image" src="/images/icon-gif-submit.png" alt="gif imput icon" width="24" height="24"/>
-            <input type="image" src="/images/icon-poll-submit.png" alt="poll imput icon" width="24" height="24"/>
-            <input type="image" src="/images/icon-emogi-submit.png" alt="emogi imput icon" width="24" height="24"/>
-            <input type="image" src="/images/icon-schedule-submit.png" alt="schedule imput icon" width="24" height="24"/>
+            <input type="file" id="imageUploader" accept='image/*' onChange={event => changeFileState(event)}/>
+            <input type="image" src="/images/icon-image-submit.png" alt="image icon" width="24" height="24" onClick={clickToUploadFile}/>
+            <input type="image" src="/images/icon-gif-submit.png" alt="gif icon" width="24" height="24"/>
+            <input type="image" src="/images/icon-poll-submit.png" alt="poll icon" width="24" height="24"/>
+            <input type="image" src="/images/icon-emogi-submit.png" alt="emogi icon" width="24" height="24"/>
+            <input type="image" src="/images/icon-schedule-submit.png" alt="schedule icon" width="24" height="24"/>
           </div>
           <div className="button-container">
             <Button label="Tweet" fade onClick={createTweet}></Button>
