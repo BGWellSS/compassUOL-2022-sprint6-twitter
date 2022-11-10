@@ -36,7 +36,11 @@ export default function Profile ({
         </a>
       );
     }
-    return ( <Button label="Follow" btnType="secondary" size="small"></Button> );
+    return (
+      <a href = {linkURL}>
+        <Button label="Follow" btnType="secondary" size="small"></Button>
+      </a>
+    );
   }
 
   return (

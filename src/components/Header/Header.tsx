@@ -12,6 +12,9 @@ export default function Header ({
   dark = false,
   ...props
 }: HeaderProps) {
+  function changeTheme() {
+  }
+
   return (
     <header 
       className={`page-header${dark ? " header-dark" : ""}`}
@@ -23,6 +26,7 @@ export default function Header ({
           src="/images/icon-theme-selector.png"
           alt="theme selector"
           className={`theme-icon`}
+          onClick={changeTheme}
         />
       </picture>
     </header>
